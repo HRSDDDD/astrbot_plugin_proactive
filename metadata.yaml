@@ -1,0 +1,4 @@
+name: proactive_context
+desc: 上下文感知主动回复插件，支持群聊空闲检测、免打扰时段、LLM 上下文延续
+version: 1.0.0
+author: Architect

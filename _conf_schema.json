@@ -1,0 +1,37 @@
+{
+  "prompt_template": {
+    "type": "string",
+    "default": "你是群聊里的一员。请根据以下历史对话记录，自然地延续当前话题，生成一条简短、有上下文关联的回复。不要生硬问候，不要重复别人的话。\n\n历史对话：\n{history}\n\n请生成回复（不超过{max_length}字）：",
+    "description": "LLM提示词模板，可用 {history} 和 {max_length} 占位符"
+  },
+  "idle_timeout_seconds": {
+    "type": "int",
+    "default": 300,
+    "description": "群聊无消息持续多少秒后，Bot自动发起上下文回复（秒）"
+  },
+  "history_limit": {
+    "type": "int",
+    "default": 15,
+    "description": "单个群保留的历史消息条数上限"
+  },
+  "do_not_disturb_start": {
+    "type": "string",
+    "default": "23:00",
+    "description": "免打扰开始时间，24小时制 HH:MM"
+  },
+  "do_not_disturb_end": {
+    "type": "string",
+    "default": "08:00",
+    "description": "免打扰结束时间，24小时制 HH:MM"
+  },
+  "max_chat_length": {
+    "type": "int",
+    "default": 80,
+    "description": "主动回复内容的最大字数限制"
+  },
+  "check_interval_seconds": {
+    "type": "int",
+    "default": 30,
+    "description": "后台检测空闲状态的时间间隔（秒），不建议低于10秒"
+  }
+}
